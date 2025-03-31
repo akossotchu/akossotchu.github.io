@@ -3,7 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>akossotchu - Developer Portfolio</title>
+    
+    <!-- Meta tags SEO -->
+    <title>akossotchu | Amateur Python Developer | AI-Assisted REIT Portfolio Tracker</title>
+    <meta name="description" content="Portfolio de akossotchu, desenvolvedor Python amador que utiliza inteligência artificial para criar ferramentas de análise financeira e rastreamento de portfólio para REITs.">
+    <meta name="keywords" content="amateur Python developer, AI-assisted coding, REIT analysis, financial tools, portfolio tracker, data visualization, PyQt5, artificial intelligence"
+    <meta name="author" content="akossotchu">
+    
+    <!-- Open Graph tags para mídias sociais -->
+    <meta property="og:title" content="akossotchu | Amateur Python Developer | AI-Assisted Projects">
+    <meta property="og:description" content="Desenvolvedor Python amador criando ferramentas de análise financeira para REITs com ajuda de inteligência artificial">
+    <meta property="og:image" content="https://raw.githubusercontent.com/akossotchu/REIT-Portfolio-Tracker/refs/heads/screenshots/screenshot.png">
+    <meta property="og:url" content="https://akossotchu.github.io/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="akossotchu | Amateur Python Developer | AI-Assisted Projects">
+    <meta name="twitter:description" content="Desenvolvedor Python amador criando ferramentas de análise financeira para REITs com ajuda de inteligência artificial">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/akossotchu/REIT-Portfolio-Tracker/refs/heads/screenshots/screenshot.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://akossotchu.github.io/">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -224,6 +249,83 @@
             color: var(--accent-color);
         }
 
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background-color: var(--light-color);
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 80px 0;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .skill-category h3 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .skill-list li::before {
+            content: '→';
+            color: var(--secondary-color);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background-color: var(--light-color);
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
         /* Footer */
         footer {
             background: var(--primary-color);
@@ -283,6 +385,8 @@
                 gap: 10px;
             }
         }
+
+        /* Schema Markup está incorporado no HTML como JSON-LD */
     </style>
 </head>
 <body>
@@ -290,8 +394,8 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <h1>akossotchu</h1>
-                <p>Amateur Python programmer who heavily relies on artificial intelligence to create anything remotely decent</p>
+                <h1>akossotchu - Amateur Python Developer</h1>
+                <p>Creating REIT analysis tools with the help of AI assistance</p>
                 <div class="social-icons">
                     <a href="https://github.com/akossotchu" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                 </div>
@@ -299,8 +403,26 @@
         </div>
     </header>
 
+    <!-- About Section (Novo) -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Amateur Python Developer Using AI Assistance</h3>
+                    <p>
+                        I'm an amateur Python programmer who leverages artificial intelligence to create useful financial analysis tools. My journey includes learning how to design and develop applications for tracking investments.
+                    </p>
+                    <p>
+                        With the help of AI tools, I've been able to work with Python frameworks and libraries to build functional user interfaces and data visualization tools that help with investment decisions, despite not being a professional developer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             
@@ -339,16 +461,95 @@
         </div>
     </section>
 
+    <!-- Skills Section (Novo) -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <ul class="skill-list">
+                        <li>Python (Beginner to Intermediate)</li>
+                        <li>PyQt5 & Qt Designer (with AI assistance)</li>
+                        <li>Data Analysis & Visualization (learning)</li>
+                        <li>AI-Assisted Development</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Financial Analysis</h3>
+                    <ul class="skill-list">
+                        <li>REIT Portfolio Management</li>
+                        <li>Dividend Analysis</li>
+                        <li>Investment Performance Metrics</li>
+                        <li>Financial Reporting</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <ul class="skill-list">
+                        <li>Git & GitHub (basics)</li>
+                        <li>AI Development Tools (ChatGPT, Claude)</li>
+                        <li>Pandas & NumPy (with AI guidance)</li>
+                        <li>Matplotlib & Seaborn (learning)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Novo) -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>Interested in collaborating or have questions about my projects? Feel free to reach out through GitHub or by email.</p>
+                <div class="social-icons" style="margin-top: 30px;">
+                    <a href="https://github.com/akossotchu" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                    <a href="mailto:contact@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <p class="footer-text">© 2025 akossotchu. All rights reserved.</p>
                 <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
                     <a href="https://github.com/akossotchu" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- JSON-LD Markup para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "akossotchu",
+        "jobTitle": "Amateur Python Developer",
+        "description": "Amateur Python developer creating financial analysis tools and REIT portfolio tracking applications with AI assistance",
+        "knowsAbout": ["Python Basics", "AI-Assisted Development", "Financial Analysis", "REIT Investment", "Data Visualization"],
+        "url": "https://akossotchu.github.io/",
+        "sameAs": [
+            "https://github.com/akossotchu"
+        ],
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://akossotchu.github.io/"
+        },
+        "knowsLanguage": ["Python (Basic)", "HTML (Basic)"],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Hobbyist"
+        }
+    }
+    </script>
 </body>
 </html>
