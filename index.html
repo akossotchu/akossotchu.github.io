@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Meta tags SEO -->
-    <title>akossotchu | Amateur Python Developer | AI-Assisted REIT Portfolio Tracker</title>
-    <meta name="description" content="Portfolio of akossotchu, an amateur Python programmer who uses AI to create financial analysis tools and portfolio tracking for REITs.">
-    <meta name="keywords" content="amateur Python developer, AI-assisted coding, REIT analysis, financial tools, portfolio tracker, data visualization, PyQt5, artificial intelligence"
+    <title>akossotchu | Amateur Python Developer | AI-Assisted Financial Tools</title>
+    <meta name="description" content="Portfolio of akossotchu, an amateur Python programmer who uses AI to create financial analysis tools, dividend calculators, and portfolio tracking for REITs.">
+    <meta name="keywords" content="amateur Python developer, AI-assisted coding, REIT analysis, dividend calculator, financial tools, portfolio tracker, data visualization, PyQt5, artificial intelligence">
     <meta name="author" content="akossotchu">
 
     <!-- Google -->
@@ -15,7 +15,7 @@
     
     <!-- Open Graph tags para mídias sociais -->
     <meta property="og:title" content="akossotchu | Amateur Python Developer | AI-Assisted Projects">
-    <meta property="og:description" content="Desenvolvedor Python amador criando ferramentas de análise financeira para REITs com ajuda de inteligência artificial">
+    <meta property="og:description" content="Desenvolvedor Python amador criando ferramentas de análise financeira e calculadoras de investimento com ajuda de inteligência artificial">
     <meta property="og:image" content="https://raw.githubusercontent.com/akossotchu/REIT-Portfolio-Tracker/refs/heads/screenshots/screenshot.png">
     <meta property="og:url" content="https://akossotchu.github.io/">
     <meta property="og:type" content="website">
@@ -23,7 +23,7 @@
     <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="akossotchu | Amateur Python Developer | AI-Assisted Projects">
-    <meta name="twitter:description" content="Desenvolvedor Python amador criando ferramentas de análise financeira para REITs com ajuda de inteligência artificial">
+    <meta name="twitter:description" content="Desenvolvedor Python amador criando ferramentas de análise financeira e calculadoras de investimento com ajuda de inteligência artificial">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/akossotchu/REIT-Portfolio-Tracker/refs/heads/screenshots/screenshot.png">
     
     <!-- Canonical URL -->
@@ -31,9 +31,6 @@
 	
 	<!-- Sitemap reference -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-
-    <!-- Corrigir a meta tag de keywords que está faltando o fechamento ">" -->
-    <meta name="keywords" content="amateur Python developer, AI-assisted coding, REIT analysis, financial tools, portfolio tracker, data visualization, PyQt5, artificial intelligence">
     
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -164,10 +161,17 @@
         .project-image {
             width: 100%;
             height: 300px;
-            background-image: url('https://raw.githubusercontent.com/akossotchu/REIT-Portfolio-Tracker/refs/heads/screenshots/screenshot.png');
             background-size: cover;
             background-position: center;
             position: relative;
+        }
+
+        .project-image-reit {
+            background-image: url('https://raw.githubusercontent.com/akossotchu/REIT-Portfolio-Tracker/refs/heads/screenshots/screenshot.png');
+        }
+
+        .project-image-dividend {
+            background-image: url('https://via.placeholder.com/800x450.png?text=Dividend+Portfolio+Calculator');
         }
 
         .project-overlay {
@@ -421,7 +425,7 @@
                 <div class="about-text">
                     <h3>Amateur Python Developer Using AI Assistance</h3>
                     <p>
-                        I'm an amateur Python programmer who leverages artificial intelligence to create useful financial analysis tools. My journey includes learning how to design and develop applications for tracking investments.
+                        I'm an amateur Python programmer who leverages artificial intelligence to create useful financial analysis tools. My journey includes learning how to design and develop applications for tracking investments and planning financial futures.
                     </p>
                     <p>
                         With the help of AI tools, I've been able to work with Python frameworks and libraries to build functional user interfaces and data visualization tools that help with investment decisions, despite not being a professional developer.
@@ -436,8 +440,9 @@
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             
+            <!-- REIT Portfolio Tracker Project -->
             <div class="project-card">
-                <div class="project-image">
+                <div class="project-image project-image-reit">
                     <div class="project-overlay">
                         <a href="https://akossotchu.github.io/REIT-Portfolio-Tracker/" class="view-project" target="_blank">View Project</a>
                     </div>
@@ -468,6 +473,39 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Dividend Portfolio Calculator Project -->
+            <div class="project-card">
+                <div class="project-image project-image-dividend">
+                    <div class="project-overlay">
+                        <a href="https://akossotchu.github.io/Dividend-Portfolio-Calculator/" class="view-project" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Dividend Portfolio Calculator</h3>
+                    <p class="project-description">
+                        A powerful desktop application for planning and visualizing dividend investment strategies. Model portfolio growth, forecast dividend income, analyze yield on cost metrics, and simulate various investment scenarios to optimize your long-term dividend investing plan.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">PyQt5</span>
+                        <span class="project-tag">Plotly</span>
+                        <span class="project-tag">Dividend Planning</span>
+                        <span class="project-tag">AI-Assisted</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/akossotchu/Dividend-Portfolio-Calculator" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                        <a href="https://github.com/akossotchu/Dividend-Portfolio-Calculator#-getting-started" class="project-link" target="_blank">
+                            <i class="fas fa-book"></i> Documentation
+                        </a>
+                        <a href="https://github.com/akossotchu/Dividend-Portfolio-Calculator/releases/latest" class="project-link" target="_blank">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -489,7 +527,7 @@
                     <h3>Financial Analysis</h3>
                     <ul class="skill-list">
                         <li>REIT Portfolio Management</li>
-                        <li>Dividend Analysis</li>
+                        <li>Dividend Investment Planning</li>
                         <li>Investment Performance Metrics</li>
                         <li>Financial Reporting</li>
                     </ul>
@@ -500,7 +538,7 @@
                         <li>Git & GitHub (basics)</li>
                         <li>AI Development Tools (ChatGPT, Claude)</li>
                         <li>Pandas & NumPy (with AI guidance)</li>
-                        <li>Matplotlib & Seaborn (learning)</li>
+                        <li>Plotly & Matplotlib (learning)</li>
                     </ul>
                 </div>
             </div>
@@ -540,8 +578,8 @@
         "@type": "Person",
         "name": "akossotchu",
         "jobTitle": "Amateur Python Developer",
-        "description": "Amateur Python developer creating financial analysis tools and REIT portfolio tracking applications with AI assistance",
-        "knowsAbout": ["Python Basics", "AI-Assisted Development", "Financial Analysis", "REIT Investment", "Data Visualization"],
+        "description": "Amateur Python developer creating financial analysis tools, dividend calculators and REIT portfolio tracking applications with AI assistance",
+        "knowsAbout": ["Python Basics", "AI-Assisted Development", "Financial Analysis", "REIT Investment", "Dividend Planning", "Data Visualization"],
         "url": "https://akossotchu.github.io/",
         "sameAs": [
             "https://github.com/akossotchu"
